@@ -67,7 +67,7 @@ router.get(/([di])\/([A-Za-z0-9_-]+)\/?(.*)?/, async (req, res) => {
             window.location.href = ${JSON.stringify(result.href)};
             setTimeout(function() {
               window.close();
-            }, 3000); // Try to close the tab after 3 seconds
+            }, 10000); // Try to close the tab after 10 seconds
           </script>
           <noscript>
             <p>If you're not redirected, <a href="${result.href}">click here</a>.</p>
